@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,400&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+  --main-color: #fafafa;
+  --secondary-color: #34a1cd;
+  --text-color: #e6e6e6;
+  --gradient-1: #ed9550;
+  --gradient-2: #c36d89;
+  --dark-red: #4c1030;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: rgba(237, 148, 80, 1);
+  background: -moz-linear-gradient(
+    top,
+    rgba(237, 148, 80, 1) 0%,
+    rgba(195, 109, 138, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, rgba(237, 148, 80, 1)),
+    color-stop(100%, rgba(195, 109, 138, 1))
+  );
+  background: -webkit-linear-gradient(
+    top,
+    rgba(237, 148, 80, 1) 0%,
+    rgba(195, 109, 138, 1) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    rgba(237, 148, 80, 1) 0%,
+    rgba(195, 109, 138, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    rgba(237, 148, 80, 1) 0%,
+    rgba(195, 109, 138, 1) 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(237, 148, 80, 1) 0%,
+    rgba(195, 109, 138, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9450', endColorstr='#c36d8a', GradientType=0 );
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: fit-content;
+  margin: 10rem auto 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(76, 16, 48, 0.5);
+  padding: 3rem 3rem;
+  border-radius: 1.5rem;
+  .title {
+    margin-bottom: 3rem;
+    h1 {
+      font-weight: 400;
+      font-size: 3rem;
+    }
+  }
+  .salah {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    ul {
+      li {
+        padding: 10px 0;
+        font-size: 1.4rem;
+      }
+    }
+    &-names {
+    }
+    &-times {
+    }
+  }
+}
