@@ -59,6 +59,9 @@ ul {
   background: rgba(76, 16, 48, 0.5);
   padding: 3rem 3rem;
   border-radius: 1.5rem;
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .container .title {
