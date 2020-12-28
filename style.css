@@ -64,20 +64,31 @@ ul {
   transition: opacity 1s ease-in-out;
 }
 
+@media (max-width: 600px) {
+  .container {
+    margin: 5rem auto 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    width: 95%;
+  }
+}
+
 .container .title {
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .container .title h1 {
   font-size: 3rem;
 }
 
-.container .title h2 {
-  text-align: center;
-}
-
-.container .title .date {
-  text-align: center;
+@media (max-width: 600px) {
+  .container .title h1 {
+    font-size: 2rem;
+  }
 }
 
 .container .salah {

@@ -79,17 +79,29 @@ ul {
   border-radius: 1.5rem;
   opacity: 0;
   transition: opacity 1s ease-in-out;
+
+  @media (max-width: 600px) {
+    margin: 5rem auto 0;
+  }
+  @media (max-width: 420px) {
+    width: 95%;
+  }
+
   .title {
     margin-bottom: 1.5rem;
+    text-align: center;
     h1 {
       font-size: 3rem;
+      @media (max-width: 600px) {
+        font-size: 2rem;
+      }
     }
-    h2 {
-      text-align: center;
-    }
-    .date {
-      text-align: center;
-    }
+    // h2 {
+    //   text-align: center;
+    // }
+    // .date {
+    //   text-align: center;
+    // }
   }
   .salah {
     display: flex;
