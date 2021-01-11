@@ -11,6 +11,10 @@ const displayDataInDOM = async data => {
   document.querySelector('.container').style.opacity = '1'
 }
 
-fetch('/.netlify/functions/fetchDataFromAPI').then(response =>
-  console.log(response)
+const fetchData = fetch('/.netlify/functions/fetchDataFromAPI').then(response =>
+  response.json()
 )
+
+fetch('/.netlify/functions/fetchDataFromAPI')
+  .then(response => response.json())
+  .then(data => console.log(data))
