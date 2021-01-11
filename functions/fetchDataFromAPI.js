@@ -1,4 +1,4 @@
-export const fetchDataFromAPI2 = async () => {
+exports.handler = async function () {
   const prayerTimes = []
   const API_KEY = process.env.API_KEY
   try {
