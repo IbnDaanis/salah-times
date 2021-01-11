@@ -30,3 +30,7 @@ const displayDataInDOM = async data => {
 }
 
 fetchDataFromAPI().then(data => displayDataInDOM(data))
+
+import { fetchDataFromAPI2 } from '../functions/fetchDataFromAPI'
+
+console.log(fetchDataFromAPI2())
