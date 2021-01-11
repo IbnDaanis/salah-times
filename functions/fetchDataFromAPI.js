@@ -1,7 +1,7 @@
 const fetch = require('node-fetch')
 require('dotenv').config()
 
-const API_ENDPOINT = `https://www.londonprayertimes.com/api/times/?format=json&key=${API_KEY}&24hours=true`
+const API_ENDPOINT = `https://www.londonprayertimes.com/api/times/?format=json&key=${process.env.SALAH_API_KEY}&24hours=true`
 
 exports.handler = async function (event, context) {
   let response
