@@ -1,4 +1,5 @@
-exports.handler = async function () {
+exports.handler = async function (event, context) {
+  const body = JSON.parse(event.body)
   const prayerTimes = []
   const API_KEY = process.env.API_KEY
   try {
