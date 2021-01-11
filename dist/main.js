@@ -1,1 +1,1 @@
-fetch("/.netlify/functions/fetchDataFromAPI").then((e=>JSON.parse(e.body).message)).then((e=>console.log(e)));
+fetch("/.netlify/functions/fetchDataFromAPI").then((e=>e.json())).then((e=>(async e=>{const t=document.querySelector(".salah-times-list"),n=document.querySelector(".date"),[o,c,a]=(new Date).toLocaleDateString("en-GB").split("/");n.textContent=`${o}/${c}/${a}`,e.forEach((e=>{const n=document.createElement("li");n.textContent=e,t.appendChild(n)})),document.querySelector(".container").style.opacity="1"})(e.message)));
