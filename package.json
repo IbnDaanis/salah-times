@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack --watch",
     "server": "live-server dist --port=3000 --no-browser",
-    "dev": "concurrently \"npm run start\" \"npm run server\""
+    "dev": "concurrently \"npm run start\" \"npm run server\"",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
