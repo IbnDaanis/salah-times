@@ -1,4 +1,5 @@
 const fetch = require('node-fetch')
+require('dotenv').config()
 
 const API_ENDPOINT = `https://www.londonprayertimes.com/api/times/?format=json&key=${API_KEY}&24hours=true`
 
