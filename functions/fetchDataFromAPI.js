@@ -10,8 +10,14 @@ exports.handler = async function () {
     salahNames.forEach(salahName => {
       prayerTimes.push(dataJSON[salahName])
     })
-    return prayerTimes
+    return {
+      statusCode: 200,
+      body: JSON.stringify({ message: prayerTimes, status: 'success' }),
+    }
   } catch (error) {
-    console.error(error)
+    return {
+      statusCode: 404,
+      body: JSON.stringify({ message: error, status: 'failure' }),
+    }
   }
 }
