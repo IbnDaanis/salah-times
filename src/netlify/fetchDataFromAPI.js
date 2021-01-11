@@ -15,7 +15,6 @@ exports.handler = async function (event, context) {
       }),
     }
   }
-
   const prayerTimes = []
   const dataJSON = await response.json()
   const salahNames = ['fajr', 'sunrise', 'dhuhr', 'asr', 'magrib', 'isha']
