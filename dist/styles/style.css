@@ -30,11 +30,8 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background: #ed9450;
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #ed9450), color-stop(100%, #c36d8a));
   background: -webkit-gradient(linear, left top, left bottom, from(#ed9450), to(#c36d8a));
   background: linear-gradient(to bottom, #ed9450 0%, #c36d8a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9450', endColorstr='#c36d8a', GradientType=0 );
 }
 
 ul {
