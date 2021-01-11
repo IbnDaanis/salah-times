@@ -1,6 +1,5 @@
-require('dotenv').config()
-
-dotenv()
+import dotenv from 'dotenv'
+console.log(process.enn)
 const salahTimesTimes = document.querySelector('.salah-times-times')
 
 let [day, month, year] = new Date().toLocaleDateString('en-GB').split('/')

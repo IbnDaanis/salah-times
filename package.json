@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --watch",
+    "server": "live-server dist --port=3000",
+    "dev": "concurrently \"npm run start\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,10 @@
   "homepage": "https://github.com/IbnDaanis/salah-times#readme",
   "dependencies": {
     "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "dotenv-webpack": "^6.0.0",
+    "webpack": "^5.12.3",
+    "webpack-cli": "^4.3.1"
   }
 }
