@@ -1,1 +1,1 @@
-fetch("/.netlify/functions/fetchDataFromAPI",{method:"POST"}).then((t=>t.json())),fetch("/.netlify/functions/fetchDataFromAPI",{method:"POST"}).then((t=>t.json())).then((t=>console.log(t)));
+fetch("/.netlify/functions/fetchDataFromAPI").then((e=>JSON.parse(e.body).message)).then((e=>console.log(e)));

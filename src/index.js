@@ -12,5 +12,5 @@ const displayDataInDOM = async data => {
 }
 
 fetch('/.netlify/functions/fetchDataFromAPI')
-  .then(response => response.json().message)
-  .then(data => displayDataInDOM(data))
+  .then(response => JSON.parse(response.body).message)
+  .then(data => console.log(data))
