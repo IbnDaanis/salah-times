@@ -10,17 +10,11 @@ const getSalahTimes = async () => {
     const fetchData = await fetch(
       `https://www.londonprayertimes.com/api/times/?format=json&key=${API_KEY}&24hours=true`
     )
-    const dataJSON = await fetchData.json()
-    // console.log(dataJSON)
+    const dataJSON = await fetchData.json() // console.log(dataJSON)
     const timeNames = ['fajr', 'sunrise', 'dhuhr', 'asr', 'magrib', 'isha']
     const times = []
     timeNames.forEach(time => {
       times.push(dataJSON[time])
-    })
-
-    const timestamps = []
-    times.forEach(time => {
-      timestamps.push(new Date(`${year}-${month}-${day}t${time}:00`).getTime())
     })
 
     times.forEach(time => {
