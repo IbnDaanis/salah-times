@@ -74,6 +74,12 @@ ul {
   }
 }
 
+@media (max-width: 320px) {
+  .container {
+    margin: 1.5rem auto;
+  }
+}
+
 .container .title {
   margin-bottom: 1.5rem;
   text-align: center;
@@ -97,6 +103,12 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 300px;
+}
+
+@media (max-width: 320px) {
+  .container .salah {
+    width: 280px;
+  }
 }
 
 .container .salah ul li {

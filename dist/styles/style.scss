@@ -56,6 +56,10 @@ ul {
     width: 95%;
   }
 
+  @media (max-width: 320px) {
+    margin: 1.5rem auto;
+  }
+
   .title {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -70,6 +74,9 @@ ul {
     display: flex;
     justify-content: space-between;
     width: 300px;
+    @media (max-width: 320px) {
+      width: 280px;
+    }
     ul {
       li {
         padding: 10px 0;
