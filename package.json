@@ -7,7 +7,8 @@
     "start": "webpack --watch",
     "server": "live-server dist --port=3000 --no-browser",
     "dev": "concurrently \"npm run start\" \"npm run server\"",
-    "build": "webpack"
+    "build": "webpack",
+    "assets": "npx pwa-asset-generator ./dist/images/kaaba.png dist/images -m ./dist/site.webmanifest --padding 'calc(50vh - 100%) calc(50vw - 200%)' -b 'linear-gradient(0deg, #c36d89, #ed9550)' -q 100 -i dist/asset-generator-changes.html --favicon"
   },
   "repository": {
     "type": "git",
