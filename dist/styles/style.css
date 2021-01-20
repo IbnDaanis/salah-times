@@ -115,4 +115,18 @@ ul {
   padding: 10px 0;
   font-size: 1.4rem;
 }
+
+footer {
+  opacity: 0.05;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+footer:hover {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
